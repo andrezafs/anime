@@ -6,6 +6,9 @@ import { Scroll } from "./components/Scroll";
 import { Banner } from "./components/Banner";
 
 import { Section } from "./components/Section";
+import { CardAnime } from "./components/CardAnime";
+
+import { Box } from "./components/Box";
 
 function App() {
   return (
@@ -54,6 +57,76 @@ function App() {
               title="ONE PUNCH MAN TERÁ 3 TEMPORADA"
               description="Como relatado anteriormente, a franquia baseada no mangá escrito por ONE e ilustrado por Yusuke Murata, One Punch Man, divulgou um comunicado confirmando a produção de uma terceira temporada da adaptação para o anime […]"
             />
+          </Section>
+          <Section title="Últimas atualizações" subtitle={""}>
+            <Box
+              css={{
+                display: "flex",
+                justifyContent: "space-between",
+                flexWrap: "wrap",
+              }}
+            >
+              <CardAnime
+                image="/the.svg"
+                title="Nanatsu no Taizai"
+                description="Episódio 24"
+              ></CardAnime>
+              <CardAnime
+                image="/the.svg"
+                title="Nanatsu no Taizai"
+                description="Episódio 24"
+              ></CardAnime>
+              <CardAnime
+                image="/the.svg"
+                title="Nanatsu no Taizai"
+                description="Episódio 24"
+              ></CardAnime>
+              <CardAnime
+                image="/the.svg"
+                title="Nanatsu no Taizai"
+                description="Episódio 24"
+              ></CardAnime>
+              <CardAnime
+                image="/the.svg"
+                title="Nanatsu no Taizai"
+                description="Episódio 24"
+              ></CardAnime>
+              <CardAnime
+                image="/the.svg"
+                title="Nanatsu no Taizai"
+                description="Episódio 24"
+              ></CardAnime>
+              <CardAnime
+                image="/the.svg"
+                title="Nanatsu no Taizai"
+                description="Episódio 24"
+              ></CardAnime>
+              <CardAnime
+                image="/the.svg"
+                title="Nanatsu no Taizai"
+                description="Episódio 24"
+              ></CardAnime>
+              <CardAnime
+                image="/the.svg"
+                title="Nanatsu no Taizai"
+                description="Episódio 24"
+              ></CardAnime>
+              <CardAnime
+                image="/the.svg"
+                title="Nanatsu no Taizai"
+                description="Episódio 24"
+              ></CardAnime>
+              <CardAnime
+                image="/the.svg"
+                title="Nanatsu no Taizai"
+                description="Episódio 24"
+              ></CardAnime>
+              <CardAnime
+                image="/the.svg"
+                title="Nanatsu no Taizai"
+                description="Episódio 24"
+              ></CardAnime>
+            </Box>
           </Section>
         </main>
       </MaxContent>
