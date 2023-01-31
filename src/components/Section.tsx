@@ -1,5 +1,6 @@
 import { styled } from "../styles";
 import { Box } from "./Box";
+import { ReactNode } from "react";
 
 const Container = styled("section", {
   padding: "$20 0",
@@ -10,6 +11,7 @@ const Title = styled("h1", {
   fontSize: "$4xl",
   fontWeight: "$normal",
   color: "$secondary",
+  marginBottom: "$10",
 });
 
 const SubTitle = styled("h2", {
@@ -20,7 +22,13 @@ const SubTitle = styled("h2", {
   marginTop: "$2",
 });
 
-export function Section({ title, subtitle, children, ...props }) {
+type SectionProps = {
+  title: string;
+  subtitle: string;
+  children: ReactNode;
+};
+
+export function Section({ title, subtitle, children, ...props }: SectionProps) {
   return (
     <Container {...props}>
       <Box>
