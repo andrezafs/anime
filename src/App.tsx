@@ -61,9 +61,9 @@ function App() {
           <Section title="Últimas atualizações" subtitle={""}>
             <Box
               css={{
-                display: "flex",
-                justifyContent: "space-between",
-                flexWrap: "wrap",
+                display: "grid",
+                gridTemplateColumns: "repeat(6, 1fr)",
+                gridGap: "$12 $5",
               }}
             >
               <CardAnime
@@ -96,6 +96,46 @@ function App() {
                 title="Nanatsu no Taizai"
                 description="Episódio 24"
               ></CardAnime>
+              <CardAnime
+                image="/the.svg"
+                title="Nanatsu no Taizai"
+                description="Episódio 24"
+              ></CardAnime>
+              <CardAnime
+                image="/the.svg"
+                title="Nanatsu no Taizai"
+                description="Episódio 24"
+              ></CardAnime>
+              <CardAnime
+                image="/the.svg"
+                title="Nanatsu no Taizai"
+                description="Episódio 24"
+              ></CardAnime>
+              <CardAnime
+                image="/the.svg"
+                title="Nanatsu no Taizai"
+                description="Episódio 24"
+              ></CardAnime>
+              <CardAnime
+                image="/the.svg"
+                title="Nanatsu no Taizai"
+                description="Episódio 24"
+              ></CardAnime>
+              <CardAnime
+                image="/the.svg"
+                title="Nanatsu no Taizai"
+                description="Episódio 24"
+              ></CardAnime>
+            </Box>
+          </Section>
+          <Section title="Animes Recentes " subtitle="">
+            <Box
+              css={{
+                display: "grid",
+                gridTemplateColumns: "repeat(6, 1fr)",
+                gridGap: "$12 $5",
+              }}
+            >
               <CardAnime
                 image="/the.svg"
                 title="Nanatsu no Taizai"

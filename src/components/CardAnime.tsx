@@ -7,7 +7,6 @@ const Container = styled("div", {
   justifyContent: "flex-end",
   padding: "$6",
   height: 254,
-  width: 188,
   backgroundSize: "cover",
   backgroundPosition: "center",
   borderRadius: "$3",
