@@ -42,11 +42,7 @@ export function CardAnime({
   ...props
 }: animeCardProps) {
   return (
-    <Box
-      css={{
-        marginBottom: "$12",
-      }}
-    >
+    <Box>
       <Container
         {...props}
         css={{

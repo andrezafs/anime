@@ -11,7 +11,7 @@ export const globalStyles: Record<string, Stitches.CSS> = {
     "--webkit-font-smoothing": "antialiased",
   },
   body: {
-    backgroundColor: "$tertiary",
+    backgroundColor: "$dark",
   },
   a: {
     textDecoration: "none",

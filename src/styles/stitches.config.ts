@@ -91,6 +91,7 @@ export const { styled, getCssText, globalCss } = createStitches({
       tertiary: "#0B1421",
       quaternary: "#151B26",
       quinary: "#BFBFBF",
+      dark: "#09090B",
     },
     fonts: {
       inter: "Inter",
