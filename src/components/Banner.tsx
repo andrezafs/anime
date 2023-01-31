@@ -7,8 +7,9 @@ const Container = styled("div", {
   flexDirection: "column",
   justifyContent: "flex-end",
   height: 400,
-  background:
-    " linear-gradient(270deg, rgba(6, 9, 15, 0.32) 0%, rgba(6, 9, 15, 0.9) 100%), url(/banner.svg)",
+  marginTop: "$10",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
 });
 
 const Title = styled("h1", {
@@ -33,9 +34,14 @@ type bannerProps = ComponentProps<typeof Container> & {
   description: string;
 };
 
-export function Banner({ title, description, ...props }: bannerProps) {
+export function Banner({ title, description, image, ...props }: bannerProps) {
   return (
-    <Container {...props}>
+    <Container
+      {...props}
+      css={{
+        backgroundImage: `linear-gradient(270deg, rgba(6, 9, 15, 0.32) 0%, rgba(6, 9, 15, 0.9) 100%), url(${image})`,
+      }}
+    >
       <Box
         css={{
           padding: "$10 $11",

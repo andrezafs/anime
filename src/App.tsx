@@ -47,6 +47,7 @@ function App() {
             subtitle="O que você vai assistir hoje?"
           >
             <Banner
+              image="/banner.svg"
               css={{
                 marginTop: "$10 ",
               }}
