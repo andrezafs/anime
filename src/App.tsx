@@ -42,6 +42,18 @@ function App() {
             <Tab>Y</Tab>
             <Tab>Z</Tab>
           </Scroll>
+          <Section
+            title="Últimas novidades"
+            subtitle="O que você vai assistir hoje?"
+          >
+            <Banner
+              css={{
+                marginTop: "$10 ",
+              }}
+              title="ONE PUNCH MAN TERÁ 3 TEMPORADA"
+              description="Como relatado anteriormente, a franquia baseada no mangá escrito por ONE e ilustrado por Yusuke Murata, One Punch Man, divulgou um comunicado confirmando a produção de uma terceira temporada da adaptação para o anime […]"
+            />
+          </Section>
         </main>
       </MaxContent>
     </div>
