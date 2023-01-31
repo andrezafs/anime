@@ -2,6 +2,7 @@ import { styled } from "../styles";
 import { ComponentProps } from "react";
 
 import { Box } from "./Box";
+
 const Container = styled("div", {
   display: "flex",
   flexDirection: "column",
@@ -32,6 +33,7 @@ const Description = styled("p", {
 type bannerProps = ComponentProps<typeof Container> & {
   title: string;
   description: string;
+  image: string;
 };
 
 export function Banner({ title, description, image, ...props }: bannerProps) {
