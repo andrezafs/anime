@@ -1,9 +1,15 @@
 import { Home } from "./pages/Home";
+import { AnimeDetails } from "./pages/AnimeDetails";
+
+import * as React from "react";
+import { Routes, Route, Outlet, Link } from "react-router-dom";
+
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <Routes>
+      <Route index element={<Home />} />
+      <Route path="anime" element={<AnimeDetails />} />
+    </Routes>
   );
 }
 

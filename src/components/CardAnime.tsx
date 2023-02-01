@@ -1,5 +1,6 @@
 import { styled } from "../styles";
 import { Box } from "./Box";
+import { useNavigate } from "react-router-dom";
 
 const Container = styled("div", {
   display: "flex",
@@ -41,10 +42,13 @@ export function CardAnime({
   image,
   ...props
 }: animeCardProps) {
+  const navigate = useNavigate();
+
   return (
     <Box>
       <Container
         {...props}
+        onClick={() => navigate("anime")}
         css={{
           backgroundImage: `linear-gradient(180deg, rgba(6, 9, 15, 0) 0%, #06090F 100%), url(${image})`,
         }}
