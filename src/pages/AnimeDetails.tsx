@@ -10,6 +10,7 @@ import { Section } from "../components/Section";
 import { CardComments } from "../components/CardComments";
 import { CardAnime } from "../components/CardAnime";
 import { AnimeList } from "../components/AnimeList";
+import { Footer } from "../components/Footer";
 export function AnimeDetails() {
   return (
     <div>
@@ -68,6 +69,7 @@ export function AnimeDetails() {
               <CardAnime></CardAnime>
             </AnimeList>
           </Section>
+          <Footer description="Todos os direitos reservados aos criadores e produtores dos animes"></Footer>
         </MaxContent>
       </main>
     </div>
