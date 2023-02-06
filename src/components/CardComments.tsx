@@ -5,10 +5,17 @@ const Container = styled("div", {
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
+
+  "& + &": {
+    borderTop: "1px solid $quaternary",
+    marginTop: 16,
+    paddingTop: 24,
+    // marginTop: "$20",
+  },
 });
 const BoxComments = styled("div", {
   display: "flex",
-  padding: "$4 0",
+  alignItems: "center",
   gap: "$8",
 });
 const Profile = styled("img", {
@@ -34,17 +41,10 @@ export function CardComments() {
   return (
     <Container>
       <BoxComments
-        css={{
-          borderBottom: "1px solid $quaternary",
-        }}
+      // css={{
+      //   borderBottom: "1px solid $quaternary",
+      // }}
       >
-        <Profile src="/the.svg"></Profile>
-        <Box>
-          <Name>Ana Júlia</Name>
-          <Description>Episodio muito top, já voltou muito bom!</Description>
-        </Box>
-      </BoxComments>
-      <BoxComments>
         <Profile src="/the.svg"></Profile>
         <Box>
           <Name>Ana Júlia</Name>

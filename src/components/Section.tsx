@@ -3,7 +3,7 @@ import { Box } from "./Box";
 import { ReactNode } from "react";
 
 const Container = styled("section", {
-  padding: "$20 0",
+  padding: "$10 0",
 });
 
 const Title = styled("h1", {

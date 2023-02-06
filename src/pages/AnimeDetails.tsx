@@ -58,6 +58,8 @@ export function AnimeDetails() {
           <SectionAnimeDetails />
           <Section title="Comentários" subtitle="">
             <CardComments></CardComments>
+            <CardComments></CardComments>
+            <CardComments></CardComments>
           </Section>
           <Section title="Relacionados" subtitle="">
             <AnimeList>

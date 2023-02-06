@@ -11,6 +11,7 @@ const Container = styled("button", {
   fontFamily: "$inter",
   fontSize: "$lg",
   fontWeight: "$medium",
+  marginTop: "$12",
 });
 
 type buttonViewMoreProps = {
