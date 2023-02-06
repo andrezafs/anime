@@ -30,33 +30,21 @@ const Description = styled("p", {
   color: "$quinary",
 });
 
-type animeCardProps = {
-  title: string;
-  description: string;
-  image: string;
-};
-
-export function CardAnime({
-  title,
-  description,
-  image,
-  ...props
-}: animeCardProps) {
+export function CardAnime({}) {
   const navigate = useNavigate();
 
   return (
     <Box>
       <Container
-        {...props}
         onClick={() => navigate("anime")}
         css={{
-          backgroundImage: `linear-gradient(180deg, rgba(6, 9, 15, 0) 0%, #06090F 100%), url(${image})`,
+          backgroundImage: `linear-gradient(180deg, rgba(6, 9, 15, 0) 0%, #06090F 100%), url(${"/the.svg"})`,
         }}
       >
-        <Description>{description}</Description>
+        <Description>Episódio 24</Description>
       </Container>
 
-      <Title>{title}</Title>
+      <Title>Nanatsu no Taizai</Title>
     </Box>
   );
 }
