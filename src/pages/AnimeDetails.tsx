@@ -5,7 +5,10 @@ import { Box } from "../components/Box";
 import { Player } from "../components/Player";
 import { CardMostViewed } from "../components/CardMostViewed";
 import { AsideMostViewed } from "../components/AsideMostViewed";
-
+import { SectionAnimeDetails } from "../components/SectionAnimeDetails";
+import { Section } from "../components/Section";
+import { CardComments } from "../components/CardComments";
+import { CardAnime } from "../components/CardAnime";
 export function AnimeDetails() {
   return (
     <div>
@@ -49,6 +52,9 @@ export function AnimeDetails() {
               ></CardMostViewed>
             </AsideMostViewed>
           </Box>
+
+          <SectionAnimeDetails />
+          <Section title="Comentários" subtitle=""></Section>
         </MaxContent>
       </main>
     </div>
