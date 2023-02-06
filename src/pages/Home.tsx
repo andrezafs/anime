@@ -8,6 +8,7 @@ import { CardAnime } from "../components/CardAnime";
 import { Box } from "../components/Box";
 import { ButtonViewMore } from "../components/ButtonViewMore";
 import { Footer } from "../components/Footer";
+import { AnimeList } from "../components/AnimeList";
 
 export function Home() {
   return (
@@ -58,116 +59,33 @@ export function Home() {
             />
           </Section>
           <Section title="Últimas atualizações" subtitle={""}>
-            <Box
-              css={{
-                display: "grid",
-                gridTemplateColumns: "repeat(6, 1fr)",
-                gridGap: "$12 $5",
-              }}
-            >
-              <CardAnime
-                image="/the.svg"
-                title="Nanatsu no Taizai"
-                description="Episódio 24"
-              ></CardAnime>
-              <CardAnime
-                image="/the.svg"
-                title="Nanatsu no Taizai"
-                description="Episódio 24"
-              ></CardAnime>
-              <CardAnime
-                image="/the.svg"
-                title="Nanatsu no Taizai"
-                description="Episódio 24"
-              ></CardAnime>
-              <CardAnime
-                image="/the.svg"
-                title="Nanatsu no Taizai"
-                description="Episódio 24"
-              ></CardAnime>
-              <CardAnime
-                image="/the.svg"
-                title="Nanatsu no Taizai"
-                description="Episódio 24"
-              ></CardAnime>
-              <CardAnime
-                image="/the.svg"
-                title="Nanatsu no Taizai"
-                description="Episódio 24"
-              ></CardAnime>
-              <CardAnime
-                image="/the.svg"
-                title="Nanatsu no Taizai"
-                description="Episódio 24"
-              ></CardAnime>
-              <CardAnime
-                image="/the.svg"
-                title="Nanatsu no Taizai"
-                description="Episódio 24"
-              ></CardAnime>
-              <CardAnime
-                image="/the.svg"
-                title="Nanatsu no Taizai"
-                description="Episódio 24"
-              ></CardAnime>
-              <CardAnime
-                image="/the.svg"
-                title="Nanatsu no Taizai"
-                description="Episódio 24"
-              ></CardAnime>
-              <CardAnime
-                image="/the.svg"
-                title="Nanatsu no Taizai"
-                description="Episódio 24"
-              ></CardAnime>
-              <CardAnime
-                image="/the.svg"
-                title="Nanatsu no Taizai"
-                description="Episódio 24"
-              ></CardAnime>
-            </Box>
+            <AnimeList>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+            </AnimeList>
+
             <ButtonViewMore>Ver mais</ButtonViewMore>
           </Section>
 
           <Section title="Animes Recentes " subtitle="">
-            <Box
-              css={{
-                display: "grid",
-                gridTemplateColumns: "repeat(6, 1fr)",
-                gridGap: "$12 $5",
-              }}
-            >
-              <CardAnime
-                image="/the.svg"
-                title="Nanatsu no Taizai"
-                description="Episódio 24"
-              ></CardAnime>
-              <CardAnime
-                image="/the.svg"
-                title="Nanatsu no Taizai"
-                description="Episódio 24"
-              ></CardAnime>
-              <CardAnime
-                image="/the.svg"
-                title="Nanatsu no Taizai"
-                description="Episódio 24"
-              ></CardAnime>
-              <CardAnime
-                image="/the.svg"
-                title="Nanatsu no Taizai"
-                description="Episódio 24"
-              ></CardAnime>
-              <CardAnime
-                image="/the.svg"
-                title="Nanatsu no Taizai"
-                description="Episódio 24"
-              ></CardAnime>
-              <CardAnime
-                image="/the.svg"
-                title="Nanatsu no Taizai"
-                description="Episódio 24"
-              ></CardAnime>
-            </Box>
+            <AnimeList>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+            </AnimeList>
           </Section>
         </main>
         <Footer description="Todos os direitos reservados aos criadores e produtores dos animes"></Footer>

@@ -9,6 +9,7 @@ import { SectionAnimeDetails } from "../components/SectionAnimeDetails";
 import { Section } from "../components/Section";
 import { CardComments } from "../components/CardComments";
 import { CardAnime } from "../components/CardAnime";
+import { AnimeList } from "../components/AnimeList";
 export function AnimeDetails() {
   return (
     <div>
@@ -56,6 +57,16 @@ export function AnimeDetails() {
           <SectionAnimeDetails />
           <Section title="Comentários" subtitle="">
             <CardComments></CardComments>
+          </Section>
+          <Section title="Relacionados" subtitle="">
+            <AnimeList>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+              <CardAnime></CardAnime>
+            </AnimeList>
           </Section>
         </MaxContent>
       </main>
