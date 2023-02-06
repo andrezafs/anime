@@ -54,7 +54,9 @@ export function AnimeDetails() {
           </Box>
 
           <SectionAnimeDetails />
-          <Section title="Comentários" subtitle=""></Section>
+          <Section title="Comentários" subtitle="">
+            <CardComments></CardComments>
+          </Section>
         </MaxContent>
       </main>
     </div>
