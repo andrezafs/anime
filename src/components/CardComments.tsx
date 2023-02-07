@@ -29,12 +29,20 @@ const Name = styled("h1", {
   fontSize: "$lg",
   color: "$secondary",
   marginBottom: "$3",
+
+  "@bp1": {
+    fontSize: "$xs",
+  },
 });
 const Description = styled("p", {
   fontFamily: "$inter",
   fontWeight: "$normal",
   fontSize: "base",
   color: "$quinary",
+
+  "@bp21": {
+    fontSize: "$xs",
+  },
 });
 
 export function CardComments() {

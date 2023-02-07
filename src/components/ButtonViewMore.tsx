@@ -11,6 +11,7 @@ const Container = styled("button", {
   fontFamily: "$inter",
   fontSize: "$lg",
   fontWeight: "$medium",
+  margin: "0 auto",
   marginTop: "$12",
 });
 

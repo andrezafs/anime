@@ -3,8 +3,12 @@ import { Box } from "./Box";
 
 const Container = styled("div", {
   display: "flex",
-  padding: "$20 0",
+  padding: "$10 0",
   gap: "$10",
+
+  "@bp2": {
+    flexDirection: "column",
+  },
 });
 
 const Poster = styled("img", {
@@ -12,6 +16,9 @@ const Poster = styled("img", {
   height: "100%",
   backgroundSize: "cover",
   backgroundPosition: "center",
+  "@bp2": {
+    display: "none",
+  },
 });
 
 const Label = styled("h1", {
@@ -19,6 +26,10 @@ const Label = styled("h1", {
   fontWeight: "$medium",
   fontSize: "$xl",
   color: "$secondary",
+
+  "@bp2": {
+    fontSize: "$base",
+  },
 });
 
 const Description = styled("p", {
@@ -28,6 +39,10 @@ const Description = styled("p", {
   color: "$quinary",
   lineHeight: "28px",
   textAlign: "justify",
+
+  "@bp2": {
+    fontSize: "$xs",
+  },
 });
 
 const Information = styled("div", {

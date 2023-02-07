@@ -12,6 +12,10 @@ const Title = styled("h1", {
   fontWeight: "$normal",
   color: "$secondary",
   marginBottom: "$10",
+
+  "@bp2": {
+    fontSize: "$base",
+  },
 });
 
 const SubTitle = styled("h2", {
@@ -20,6 +24,10 @@ const SubTitle = styled("h2", {
   fontWeight: "$normal",
   color: "$quinary",
   marginTop: "$2",
+
+  "@bp2": {
+    fontSize: "$sm",
+  },
 });
 
 type SectionProps = {

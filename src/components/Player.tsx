@@ -2,13 +2,17 @@ import { styled } from "../styles";
 import { Box } from "./Box";
 
 const Container = styled("div", {
-  // height: 470,
-  // width: 917,
+  flex: 1,
 });
 
 const Iframe = styled("iframe", {
   height: 470,
-  width: 900,
+  width: "100%",
+
+  // "@bp2": {
+  //   maxHeight: 160,
+  //   width: "100%",
+  // },
 });
 
 const Title = styled("h1", {
@@ -17,6 +21,10 @@ const Title = styled("h1", {
   fontWeight: "$medium",
   color: "$secondary",
   marginBottom: "$9",
+
+  "@bp1": {
+    fontSize: "$xs",
+  },
 });
 
 type PlayerProps = {

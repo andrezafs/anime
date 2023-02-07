@@ -8,6 +8,7 @@ const Container = styled("div", {
   justifyContent: "flex-end",
   padding: "$6",
   height: 254,
+  maxWidth: 188,
   backgroundSize: "cover",
   backgroundPosition: "center",
   borderRadius: "$3",
@@ -21,6 +22,10 @@ const Title = styled("h1", {
   color: "$secondary",
   textAlign: "center",
   marginTop: "$4",
+
+  "@bp2": {
+    fontSize: "$sm",
+  },
 });
 
 const Description = styled("p", {
@@ -28,6 +33,10 @@ const Description = styled("p", {
   fontSize: "$lg",
   fontWeight: "$medium",
   color: "$quinary",
+
+  "@bp2": {
+    fontSize: "$sm",
+  },
 });
 
 export function CardAnime({}) {

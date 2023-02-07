@@ -73,9 +73,8 @@ export function Home() {
               <CardAnime></CardAnime>
               <CardAnime></CardAnime>
             </AnimeList>
-
-            <ButtonViewMore>Ver mais</ButtonViewMore>
           </Section>
+          <ButtonViewMore>Ver mais</ButtonViewMore>
 
           <Section title="Animes Recentes " subtitle="">
             <AnimeList>

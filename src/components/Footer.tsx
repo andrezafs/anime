@@ -10,6 +10,9 @@ const Description = styled("span", {
   fontSize: "$lg",
   fontWeight: "$normal",
   color: "$quinary",
+  "@bp2": {
+    fontSize: "$sm",
+  },
 });
 
 type footerProps = {

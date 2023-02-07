@@ -11,6 +11,11 @@ const Container = styled("div", {
   marginTop: "$10",
   backgroundSize: "cover",
   backgroundPosition: "center",
+
+  "@bp1": {
+    maxHeight: 164,
+    padding: "$4 ",
+  },
 });
 
 const Title = styled("h1", {
@@ -20,6 +25,10 @@ const Title = styled("h1", {
   color: "$secondary",
   textTransform: "uppercase",
   marginBottom: "$4",
+
+  "@bp2": {
+    fontSize: "$sm",
+  },
 });
 
 const Description = styled("p", {
@@ -28,6 +37,9 @@ const Description = styled("p", {
   fontWeight: "$normal",
   color: "$quinary",
   maxWidth: 570,
+  "@bp2": {
+    fontSize: "$xxs",
+  },
 });
 
 type bannerProps = ComponentProps<typeof Container> & {

@@ -4,6 +4,10 @@ import { Box } from "./Box";
 const Container = styled("aside", {
   display: "flex",
   flexDirection: "column",
+
+  "@bp2": {
+    display: "none",
+  },
 });
 
 const Title = styled("h1", {

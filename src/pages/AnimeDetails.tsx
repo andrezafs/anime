@@ -14,15 +14,20 @@ import { Footer } from "../components/Footer";
 export function AnimeDetails() {
   return (
     <div>
-      <Header></Header>
+      {/* <Header></Header> */}
       <main>
         <MaxContent>
           <Box
             as="section"
             css={{
               display: "flex",
-              justifyContent: "space-between",
-              padding: "$20 0",
+              // justifyContent: "space-between",
+              gap: "$5",
+              padding: "$10 0",
+
+              "@bp2": {
+                flexDirection: "column",
+              },
             }}
           >
             <Player
