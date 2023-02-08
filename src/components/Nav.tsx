@@ -1,34 +1,34 @@
-import { styled } from "../styles";
+import { styled } from '../styles';
 
-const NavBar = styled("nav", {
-  display: "flex",
-  alignItems: "center",
-  gap: "$14",
+const NavBar = styled('nav', {
+  display: 'flex',
+  alignItems: 'center',
+  gap: '$14',
 });
 
-const NavList = styled("ul", {
-  display: "flex",
-  gap: "$12",
+const NavList = styled('ul', {
+  display: 'flex',
+  gap: '$12',
 });
 
-const NavItem = styled("a", {
-  fontFamily: "$inter",
-  fontSize: "$lg",
-  color: "$secondary",
+const NavItem = styled('a', {
+  fontFamily: '$inter',
+  fontSize: '$lg',
+  color: '$secondary',
 });
 
-const NavSearch = styled("input", {
-  fontFamily: "$inter",
-  fontSize: "$lg",
-  color: "$secondary",
-  backgroundColor: "$quaternary",
-  border: "none",
-  borderRadius: "$9",
-  py: "$2",
-  px: "$6",
+const NavSearch = styled('input', {
+  fontFamily: '$inter',
+  fontSize: '$lg',
+  color: '$secondary',
+  backgroundColor: '$quaternary',
+  border: 'none',
+  borderRadius: '$9',
+  py: '$2',
+  px: '$6',
 
-  "&::placeholder": {
-    color: "$secondary",
+  '&::placeholder': {
+    color: '$secondary',
   },
 });
 

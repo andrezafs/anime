@@ -1,15 +1,15 @@
-import { styled } from "../styles";
-import { ComponentProps } from "react";
+import { ComponentProps } from 'react';
+import { styled } from '../styles';
 
-const Container = styled("button", {
-  backgroundColor: "transparent",
-  padding: "$2 $10",
-  borderRadius: "$9",
-  border: "2px solid $quaternary",
-  color: "$quinary",
-  fontFamily: "$inter",
-  fontSize: "$lg",
-  marginBottom: "$7",
+const Container = styled('button', {
+  backgroundColor: 'transparent',
+  padding: '$2 $10',
+  borderRadius: '$9',
+  border: '2px solid $quaternary',
+  color: '$quinary',
+  fontFamily: '$inter',
+  fontSize: '$lg',
+  marginBottom: '$7',
 });
 
 type boxFilterProps = ComponentProps<typeof Container> & { children: string };
@@ -23,8 +23,8 @@ export function TabActive({ children, ...props }: boxFilterProps) {
     <Container
       {...props}
       css={{
-        backgroundColor: "$quaternary",
-        color: "$primary",
+        backgroundColor: '$quaternary',
+        color: '$primary',
       }}
     >
       {children}

@@ -1,8 +1,6 @@
-import { Home } from "./pages/Home";
-import { AnimeDetails } from "./pages/AnimeDetails";
-
-import * as React from "react";
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Route, Routes } from 'react-router-dom';
+import { AnimeDetails } from './pages/AnimeDetails';
+import { Home } from './pages/Home';
 
 function App() {
   return (

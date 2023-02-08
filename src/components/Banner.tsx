@@ -1,44 +1,44 @@
-import { styled } from "../styles";
-import { ComponentProps } from "react";
+import { ComponentProps } from 'react';
+import { styled } from '../styles';
 
-import { Box } from "./Box";
+import { Box } from './Box';
 
-const Container = styled("div", {
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "flex-end",
+const Container = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'flex-end',
   height: 400,
-  marginTop: "$10",
-  backgroundSize: "cover",
-  backgroundPosition: "center",
+  marginTop: '$10',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
 
-  "@bp1": {
+  '@bp1': {
     maxHeight: 164,
-    padding: "$4 ",
+    padding: '$4 ',
   },
 });
 
-const Title = styled("h1", {
-  fontFamily: "$rubik",
-  fontSize: "$5xl",
-  fontWeight: "$medium",
-  color: "$secondary",
-  textTransform: "uppercase",
-  marginBottom: "$4",
+const Title = styled('h1', {
+  fontFamily: '$rubik',
+  fontSize: '$5xl',
+  fontWeight: '$medium',
+  color: '$secondary',
+  textTransform: 'uppercase',
+  marginBottom: '$4',
 
-  "@bp2": {
-    fontSize: "$sm",
+  '@bp2': {
+    fontSize: '$sm',
   },
 });
 
-const Description = styled("p", {
-  fontFamily: "$inter",
-  fontSize: "$lg",
-  fontWeight: "$normal",
-  color: "$quinary",
+const Description = styled('p', {
+  fontFamily: '$inter',
+  fontSize: '$lg',
+  fontWeight: '$normal',
+  color: '$quinary',
   maxWidth: 570,
-  "@bp2": {
-    fontSize: "$xxs",
+  '@bp2': {
+    fontSize: '$xxs',
   },
 });
 
@@ -58,7 +58,7 @@ export function Banner({ title, description, image, ...props }: bannerProps) {
     >
       <Box
         css={{
-          padding: "$10 $11",
+          padding: '$10 $11',
         }}
       >
         <Title>{title}</Title>

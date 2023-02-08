@@ -1,21 +1,21 @@
-import { styled } from "../styles";
-import { Box } from "./Box";
+import { styled } from '../styles';
+import { Box } from './Box';
 
-const Container = styled("aside", {
-  display: "flex",
-  flexDirection: "column",
+const Container = styled('aside', {
+  display: 'flex',
+  flexDirection: 'column',
 
-  "@bp2": {
-    display: "none",
+  '@bp2': {
+    display: 'none',
   },
 });
 
-const Title = styled("h1", {
-  fontFamily: "$rubik",
-  fontWeight: "$regular",
-  fontSize: "$4xl",
-  color: "$quinary",
-  marginBottom: "$9",
+const Title = styled('h1', {
+  fontFamily: '$rubik',
+  fontWeight: '$regular',
+  fontSize: '$4xl',
+  color: '$quinary',
+  marginBottom: '$9',
 });
 
 type AsideMostViewedProps = {
@@ -33,11 +33,11 @@ export function AsideMostViewed({
       <Title>{title}</Title>
       <Box
         css={{
-          display: "flex",
-          flex: "1",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          gap: "$3",
+          display: 'flex',
+          flex: '1',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+          gap: '$3',
         }}
       >
         {children}

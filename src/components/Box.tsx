@@ -1,3 +1,3 @@
-import { styled } from "../styles";
+import { styled } from '../styles';
 
-export const Box = styled("div", {});
+export const Box = styled('div', {});

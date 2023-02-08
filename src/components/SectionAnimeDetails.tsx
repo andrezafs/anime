@@ -1,72 +1,71 @@
-import { styled } from "../styles";
-import { Box } from "./Box";
+import { styled } from '../styles';
 
-const Container = styled("div", {
-  display: "flex",
-  padding: "$10 0",
-  gap: "$10",
+const Container = styled('div', {
+  display: 'flex',
+  padding: '$10 0',
+  gap: '$10',
 
-  "@bp2": {
-    flexDirection: "column",
+  '@bp2': {
+    flexDirection: 'column',
   },
 });
 
-const Poster = styled("img", {
-  width: "100%",
-  height: "100%",
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  "@bp2": {
-    display: "none",
+const Poster = styled('img', {
+  width: '100%',
+  height: '100%',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  '@bp2': {
+    display: 'none',
   },
 });
 
-const Label = styled("h1", {
-  fontFamily: "$rubik",
-  fontWeight: "$medium",
-  fontSize: "$xl",
-  color: "$secondary",
+const Label = styled('h1', {
+  fontFamily: '$rubik',
+  fontWeight: '$medium',
+  fontSize: '$xl',
+  color: '$secondary',
 
-  "@bp2": {
-    fontSize: "$base",
+  '@bp2': {
+    fontSize: '$base',
   },
 });
 
-const Description = styled("p", {
-  fontFamily: "$inter",
-  fontSize: "$lg",
-  fontWeight: "$regular",
-  color: "$quinary",
-  lineHeight: "28px",
-  textAlign: "justify",
+const Description = styled('p', {
+  fontFamily: '$inter',
+  fontSize: '$lg',
+  fontWeight: '$regular',
+  color: '$quinary',
+  lineHeight: '28px',
+  textAlign: 'justify',
 
-  "@bp2": {
-    fontSize: "$xs",
+  '@bp2': {
+    fontSize: '$xs',
   },
 });
 
-const Information = styled("div", {
-  display: "flex",
-  alignItems: "center",
-  gap: "$4",
+const Information = styled('div', {
+  display: 'flex',
+  alignItems: 'center',
+  gap: '$4',
 });
 
-const InformationSinopse = styled("div", {
-  display: "flex",
-  flexDirection: "column",
+const InformationSinopse = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
 });
-const BoxDescription = styled("div", {
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "space-between",
-  gap: "$3",
+const BoxDescription = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-between',
+  gap: '$3',
 });
 
-const BoxInformation = styled("div", {
-  display: "flex",
-  gap: "$2",
+const BoxInformation = styled('div', {
+  display: 'flex',
+  gap: '$2',
   // display: "flex",
-  flexDirection: "column",
+  flexDirection: 'column',
 });
 // type SectionAnimeDetailsProps = {
 //   poster: string;
@@ -74,10 +73,10 @@ const BoxInformation = styled("div", {
 //   description: string;
 // };
 
-export function SectionAnimeDetails({}) {
+export function SectionAnimeDetails() {
   return (
     <Container>
-      <Poster src="/the.svg"></Poster>
+      <Poster src="/the.svg" />
       <BoxDescription>
         <BoxInformation>
           <Information>
@@ -95,7 +94,7 @@ export function SectionAnimeDetails({}) {
         </BoxInformation>
         <InformationSinopse>
           <Label>Sinopse</Label>
-          <Description css={{ marginTop: "$1" }}>
+          <Description css={{ marginTop: '$1' }}>
             Darling in the Franxx se passa em um futuro distópico e
             pós-apocalíptico onde os remanescentes da civilização humana
             abandonaram a superfície do planeta. Adultos e crianças existem em
@@ -103,7 +102,7 @@ export function SectionAnimeDetails({}) {
             tecnológicas (latifúndios) chamados de "plantações" (plantations).
             As crianças são chamadas de "parasitas", sendo elas destituídos de
             individualidade, e educadas apenas para pilotarem Franxxs em pares
-            (um menino e uma menina) para defender a humanidade.{" "}
+            (um menino e uma menina) para defender a humanidade.{' '}
           </Description>
         </InformationSinopse>
       </BoxDescription>

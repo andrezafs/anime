@@ -1,13 +1,12 @@
-import { styled } from "../styles";
-import { Box } from "./Box";
+import { styled } from '../styles';
 
-const Container = styled("div", {
+const Container = styled('div', {
   flex: 1,
 });
 
-const Iframe = styled("iframe", {
+const Iframe = styled('iframe', {
   height: 470,
-  width: "100%",
+  width: '100%',
 
   // "@bp2": {
   //   maxHeight: 160,
@@ -15,15 +14,15 @@ const Iframe = styled("iframe", {
   // },
 });
 
-const Title = styled("h1", {
-  fontFamily: "$rubik",
-  fontSize: "$4xl",
-  fontWeight: "$medium",
-  color: "$secondary",
-  marginBottom: "$9",
+const Title = styled('h1', {
+  fontFamily: '$rubik',
+  fontSize: '$4xl',
+  fontWeight: '$medium',
+  color: '$secondary',
+  marginBottom: '$9',
 
-  "@bp1": {
-    fontSize: "$xs",
+  '@bp1': {
+    fontSize: '$xs',
   },
 });
 
