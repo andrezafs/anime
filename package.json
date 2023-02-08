@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "yarn eslint --max-warnings=0 --fix src && yarn prettier --write src",
+    "lint": "yarn eslint --max-warnings=0 src && yarn prettier src",
+    "lint:fix": "yarn eslint --max-warnings=0 --fix src && yarn prettier --write src",
     "prepare": "husky install"
   },
   "dependencies": {
