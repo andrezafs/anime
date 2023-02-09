@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "yarn clean && yarn vite build --base=./ && touch dist/.nojekyll",
     "preview": "vite preview",
     "lint": "yarn eslint --max-warnings=0 src && yarn prettier src",
     "lint:fix": "yarn eslint --max-warnings=0 --fix src && yarn prettier --write src",
