@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "yarn clean && yarn vite build --base=./ && touch dist/.nojekyll",
+    "clean": "rimraf dist",
     "preview": "vite preview",
     "lint": "yarn eslint --max-warnings=0 src && yarn prettier src",
     "lint:fix": "yarn eslint --max-warnings=0 --fix src && yarn prettier --write src",
@@ -38,6 +39,7 @@
     "lint-staged": "^13.1.1",
     "prettier": "^2.8.4",
     "pretty-quick": "^3.1.3",
+    "rimraf": "^4.1.2",
     "typescript": "^4.9.3",
     "vite": "^4.0.0"
   }
